@@ -19,6 +19,7 @@ using Soz.Web.Auth;
 using Soz.Web.Extensions;
 using Soz.Web.Helpers;
 using Soz.Web.Models;
+using Serilog;
 
 namespace Soz.Web
 {
@@ -110,6 +111,10 @@ namespace Soz.Web
                 .AddInMemoryClients(Config.GetClients())
                 .AddAspNetIdentity<User>();
 
+            services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()));
+
             services.AddMvc().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
 
             services.AddAutoMapper(typeof(Startup));
@@ -118,12 +123,23 @@ namespace Soz.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole();
+            var serilog = new LoggerConfiguration()
+                .MinimumLevel.Verbose()
+                .Enrich.FromLogContext()
+                .WriteTo.File(@"authserver_log.txt");
 
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            loggerFactory.WithFilter(new FilterLoggerSettings
+            {
+                { "IdentityServer4", LogLevel.Debug },
+                { "Microsoft", LogLevel.Warning },
+                { "System", LogLevel.Warning },
+            }).AddSerilog(serilog.CreateLogger());
+
 
             app.UseExceptionHandler(
             builder =>
@@ -147,7 +163,14 @@ namespace Soz.Web
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
-            app.UseMvc();
+            app.UseCors("AllowAll");
+            app.UseHttpsRedirection();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

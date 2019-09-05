@@ -1,8 +1,7 @@
 using AutoMapper;
 using Soz.Data.Entities;
-using Soz.Web.ViewModels;
 
-namespace DotNetGigs.ViewModels.Mappings 
+namespace Soz.Web.ViewModels.Mappings 
 {
     public class ViewModelToEntityMappingProfile : Profile
     {
