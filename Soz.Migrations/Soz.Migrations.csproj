@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityServer4" Version="2.5.3" />
+    <PackageReference Include="identityserver4.entityframework" Version="2.5.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.6" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="2.2.6" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver.design" Version="1.1.6" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="2.2.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Soz.Entities\Soz.Data.csproj" />
+  </ItemGroup>
+
+</Project>
