@@ -286,3 +286,259 @@
 2019-09-06 01:30:35.609 +02:00 [INF] Removing 0 device flow codes
 2019-09-06 01:31:05.621 +02:00 [INF] Removing 0 grants
 2019-09-06 01:31:05.627 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:10:21.589 +02:00 [INF] Starting IdentityServer4 version 2.5.3.0
+2019-09-09 15:10:21.801 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-09 15:10:21.801 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-09 15:10:21.801 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-09 15:10:21.802 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-09 15:10:21.802 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-09 15:10:21.802 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-09 15:10:22.031 +02:00 [DBG] Starting grant removal
+2019-09-09 15:10:35.971 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-09-09 15:10:35.981 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-09-09 15:10:35.981 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-09-09 15:10:35.999 +02:00 [DBG] Login Url: /Account/Login
+2019-09-09 15:10:35.999 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-09 15:10:36.000 +02:00 [DBG] Logout Url: /Account/Logout
+2019-09-09 15:10:36.000 +02:00 [DBG] ConsentUrl Url: /consent
+2019-09-09 15:10:36.000 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-09 15:10:36.000 +02:00 [DBG] Error Url: /home/error
+2019-09-09 15:10:36.000 +02:00 [DBG] Error Id Parameter: errorId
+2019-09-09 15:10:36.036 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-09-09 15:10:36.053 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-09-09 15:10:36.053 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-09-09 15:10:36.057 +02:00 [DBG] Start discovery request
+2019-09-09 15:10:36.173 +02:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-09-09 15:10:36.202 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-09-09 15:10:36.202 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-09-09 15:10:36.206 +02:00 [DBG] Start authorize request
+2019-09-09 15:10:36.216 +02:00 [DBG] No user present in authorize request
+2019-09-09 15:10:36.222 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:10:36.247 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:10:36.299 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:10:36.330 +02:00 [DBG] ValidatedAuthorizeRequest
+{"ClientId":"angular_spa","ClientName":"Angular SPA","RedirectUri":"http://localhost:4200/auth-callback","AllowedRedirectUris":["http://localhost:4200/auth-callback"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email api.read","State":"397550aae1f04b5da0c4b6c0bafca42d","UiLocales":null,"Nonce":"63037cc61d5f44a9b95819bcd22782c4","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"angular_spa","redirect_uri":"http://localhost:4200/auth-callback","response_type":"id_token token","scope":"openid profile email api.read","state":"397550aae1f04b5da0c4b6c0bafca42d","nonce":"63037cc61d5f44a9b95819bcd22782c4"},"$type":"AuthorizeRequestValidationLog"}
+2019-09-09 15:10:36.344 +02:00 [INF] Showing login: User is not authenticated
+2019-09-09 15:10:37.379 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:10:37.379 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:10:37.379 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:10:37.382 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:10:52.113 +02:00 [INF] Removing 0 grants
+2019-09-09 15:10:52.120 +02:00 [WRN] Query: '(from DeviceFlowCodes x in DbSet<DeviceFlowCodes> where [x].Expiration < (Nullable<DateTime>)DateTim...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-09-09 15:10:52.130 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:11:22.150 +02:00 [INF] Removing 0 grants
+2019-09-09 15:11:22.151 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:11:26.845 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:11:26.846 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:26.846 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:11:26.894 +02:00 [WRN] Invalid password for user 7c89c302-72f6-424b-befa-3f9aa7c9b4a4.
+2019-09-09 15:11:26.899 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:11:26.899 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:26.899 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:11:26.900 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:34.605 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:11:34.605 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:34.605 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:11:34.623 +02:00 [WRN] Invalid password for user 7c89c302-72f6-424b-befa-3f9aa7c9b4a4.
+2019-09-09 15:11:34.623 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:11:34.623 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:34.624 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:11:34.624 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:45.545 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:11:45.546 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:45.546 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:11:45.582 +02:00 [DBG] Augmenting SignInContext
+2019-09-09 15:11:45.585 +02:00 [DBG] Adding idp claim with value: local
+2019-09-09 15:11:45.585 +02:00 [DBG] Adding amr claim with value: pwd
+2019-09-09 15:11:45.594 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:45.599 +02:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-09-09 15:11:45.601 +02:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-09-09 15:11:45.601 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-09-09 15:11:45.613 +02:00 [DBG] Start authorize callback request
+2019-09-09 15:11:45.620 +02:00 [DBG] User in authorize request: 7c89c302-72f6-424b-befa-3f9aa7c9b4a4
+2019-09-09 15:11:45.620 +02:00 [DBG] Start authorize request protocol validation
+2019-09-09 15:11:45.620 +02:00 [DBG] client configuration validation for client angular_spa succeeded.
+2019-09-09 15:11:45.620 +02:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-09-09 15:11:45.621 +02:00 [DBG] ValidatedAuthorizeRequest
+{"ClientId":"angular_spa","ClientName":"Angular SPA","RedirectUri":"http://localhost:4200/auth-callback","AllowedRedirectUris":["http://localhost:4200/auth-callback"],"SubjectId":"7c89c302-72f6-424b-befa-3f9aa7c9b4a4","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"openid profile email api.read","State":"397550aae1f04b5da0c4b6c0bafca42d","UiLocales":null,"Nonce":"63037cc61d5f44a9b95819bcd22782c4","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a065003da47f164c77cf4e7b9dff7582","Raw":{"client_id":"angular_spa","redirect_uri":"http://localhost:4200/auth-callback","response_type":"id_token token","scope":"openid profile email api.read","state":"397550aae1f04b5da0c4b6c0bafca42d","nonce":"63037cc61d5f44a9b95819bcd22782c4"},"$type":"AuthorizeRequestValidationLog"}
+2019-09-09 15:11:45.649 +02:00 [DBG] Client is configured to not require consent, no consent is required
+2019-09-09 15:11:45.657 +02:00 [DBG] Creating Implicit Flow response.
+2019-09-09 15:11:45.669 +02:00 [DBG] Getting claims for access token for client: angular_spa
+2019-09-09 15:11:45.670 +02:00 [DBG] Getting claims for access token for subject: 7c89c302-72f6-424b-befa-3f9aa7c9b4a4
+2019-09-09 15:11:45.881 +02:00 [DBG] Getting claims for identity token for subject: 7c89c302-72f6-424b-befa-3f9aa7c9b4a4 and client: angular_spa
+2019-09-09 15:11:45.882 +02:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-09-09 15:11:45.897 +02:00 [DBG] Authorize endpoint response
+{"SubjectId":"7c89c302-72f6-424b-befa-3f9aa7c9b4a4","ClientId":"angular_spa","RedirectUri":"http://localhost:4200/auth-callback","State":"397550aae1f04b5da0c4b6c0bafca42d","Scope":"openid profile email api.read","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-09-09 15:11:45.917 +02:00 [DBG] Augmenting SignInContext
+2019-09-09 15:11:47.023 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2019-09-09 15:11:47.023 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-09-09 15:11:47.023 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-09-09 15:11:47.023 +02:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-09-09 15:11:47.024 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-09-09 15:11:47.024 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-09-09 15:11:47.024 +02:00 [DBG] Start discovery request
+2019-09-09 15:11:47.039 +02:00 [DBG] CORS request made for path: /.well-known/openid-configuration/jwks from origin: http://localhost:4200
+2019-09-09 15:11:47.039 +02:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2019-09-09 15:11:47.039 +02:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2019-09-09 15:11:47.039 +02:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-09-09 15:11:47.040 +02:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-09-09 15:11:47.040 +02:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-09-09 15:11:47.048 +02:00 [DBG] Start key discovery request
+2019-09-09 15:11:52.172 +02:00 [INF] Removing 0 grants
+2019-09-09 15:11:52.177 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:12:22.170 +02:00 [INF] Removing 0 grants
+2019-09-09 15:12:22.171 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:12:52.179 +02:00 [INF] Removing 0 grants
+2019-09-09 15:12:52.182 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:13:22.188 +02:00 [INF] Removing 0 grants
+2019-09-09 15:13:22.193 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:13:52.195 +02:00 [INF] Removing 0 grants
+2019-09-09 15:13:52.195 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:14:22.204 +02:00 [INF] Removing 0 grants
+2019-09-09 15:14:22.209 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:14:52.213 +02:00 [INF] Removing 0 grants
+2019-09-09 15:14:52.215 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:15:22.230 +02:00 [INF] Removing 0 grants
+2019-09-09 15:15:22.235 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:15:52.244 +02:00 [INF] Removing 0 grants
+2019-09-09 15:15:52.246 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:16:22.253 +02:00 [INF] Removing 0 grants
+2019-09-09 15:16:22.260 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:16:52.277 +02:00 [INF] Removing 0 grants
+2019-09-09 15:16:52.279 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:17:22.290 +02:00 [INF] Removing 0 grants
+2019-09-09 15:17:22.292 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:17:52.302 +02:00 [INF] Removing 0 grants
+2019-09-09 15:17:52.304 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:18:22.313 +02:00 [INF] Removing 0 grants
+2019-09-09 15:18:22.318 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:18:52.323 +02:00 [INF] Removing 0 grants
+2019-09-09 15:18:52.328 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:19:22.340 +02:00 [INF] Removing 0 grants
+2019-09-09 15:19:22.341 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:19:52.373 +02:00 [INF] Removing 0 grants
+2019-09-09 15:19:52.377 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:20:22.373 +02:00 [INF] Removing 0 grants
+2019-09-09 15:20:22.375 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:20:27.404 +02:00 [DBG] TaskCanceledException. Exiting.
+2019-09-09 15:20:27.435 +02:00 [DBG] Stopping grant removal
+2019-09-09 15:20:59.559 +02:00 [INF] Starting IdentityServer4 version 2.5.3.0
+2019-09-09 15:20:59.668 +02:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-09-09 15:20:59.668 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-09-09 15:20:59.668 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-09-09 15:20:59.668 +02:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-09-09 15:20:59.668 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-09-09 15:20:59.668 +02:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-09-09 15:20:59.815 +02:00 [DBG] Starting grant removal
+2019-09-09 15:21:30.210 +02:00 [INF] Removing 0 grants
+2019-09-09 15:21:30.220 +02:00 [WRN] Query: '(from DeviceFlowCodes x in DbSet<DeviceFlowCodes> where [x].Expiration < (Nullable<DateTime>)DateTim...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-09-09 15:21:30.237 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:22:00.259 +02:00 [INF] Removing 0 grants
+2019-09-09 15:22:00.264 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:22:30.267 +02:00 [INF] Removing 0 grants
+2019-09-09 15:22:30.269 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:23:00.282 +02:00 [INF] Removing 0 grants
+2019-09-09 15:23:00.286 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:23:30.289 +02:00 [INF] Removing 0 grants
+2019-09-09 15:23:30.290 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:24:00.303 +02:00 [INF] Removing 0 grants
+2019-09-09 15:24:00.308 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:24:30.323 +02:00 [INF] Removing 0 grants
+2019-09-09 15:24:30.326 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:24:32.621 +02:00 [DBG] Login Url: /Account/Login
+2019-09-09 15:24:32.621 +02:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-09-09 15:24:32.621 +02:00 [DBG] Logout Url: /Account/Logout
+2019-09-09 15:24:32.621 +02:00 [DBG] ConsentUrl Url: /consent
+2019-09-09 15:24:32.621 +02:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-09-09 15:24:32.621 +02:00 [DBG] Error Url: /home/error
+2019-09-09 15:24:32.622 +02:00 [DBG] Error Id Parameter: errorId
+2019-09-09 15:25:00.332 +02:00 [INF] Removing 0 grants
+2019-09-09 15:25:00.336 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:25:30.338 +02:00 [INF] Removing 0 grants
+2019-09-09 15:25:30.340 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:26:00.350 +02:00 [INF] Removing 0 grants
+2019-09-09 15:26:00.351 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:26:30.354 +02:00 [INF] Removing 0 grants
+2019-09-09 15:26:30.357 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:27:00.370 +02:00 [INF] Removing 0 grants
+2019-09-09 15:27:00.371 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:27:30.386 +02:00 [INF] Removing 0 grants
+2019-09-09 15:27:30.390 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:28:00.402 +02:00 [INF] Removing 0 grants
+2019-09-09 15:28:00.403 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:28:30.417 +02:00 [INF] Removing 0 grants
+2019-09-09 15:28:30.422 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:29:00.428 +02:00 [INF] Removing 0 grants
+2019-09-09 15:29:00.429 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:29:30.458 +02:00 [INF] Removing 0 grants
+2019-09-09 15:29:30.462 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:30:00.464 +02:00 [INF] Removing 0 grants
+2019-09-09 15:30:00.469 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:30:30.477 +02:00 [INF] Removing 0 grants
+2019-09-09 15:30:30.480 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:31:00.496 +02:00 [INF] Removing 0 grants
+2019-09-09 15:31:00.501 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:31:30.508 +02:00 [INF] Removing 0 grants
+2019-09-09 15:31:30.510 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:32:00.525 +02:00 [INF] Removing 0 grants
+2019-09-09 15:32:00.529 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:32:30.539 +02:00 [INF] Removing 0 grants
+2019-09-09 15:32:30.540 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:33:00.549 +02:00 [INF] Removing 0 grants
+2019-09-09 15:33:00.555 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:33:30.558 +02:00 [INF] Removing 0 grants
+2019-09-09 15:33:30.559 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:34:00.572 +02:00 [INF] Removing 0 grants
+2019-09-09 15:34:00.574 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:34:30.573 +02:00 [INF] Removing 0 grants
+2019-09-09 15:34:30.574 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:35:00.596 +02:00 [INF] Removing 0 grants
+2019-09-09 15:35:00.598 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:35:30.601 +02:00 [INF] Removing 0 grants
+2019-09-09 15:35:30.603 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:36:00.625 +02:00 [INF] Removing 0 grants
+2019-09-09 15:36:00.630 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:36:30.639 +02:00 [INF] Removing 0 grants
+2019-09-09 15:36:30.644 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:37:00.657 +02:00 [INF] Removing 0 grants
+2019-09-09 15:37:00.662 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:37:30.668 +02:00 [INF] Removing 0 grants
+2019-09-09 15:37:30.673 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:38:00.692 +02:00 [INF] Removing 0 grants
+2019-09-09 15:38:00.697 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:38:30.719 +02:00 [INF] Removing 0 grants
+2019-09-09 15:38:30.724 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:39:00.716 +02:00 [INF] Removing 0 grants
+2019-09-09 15:39:00.718 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:39:30.729 +02:00 [INF] Removing 0 grants
+2019-09-09 15:39:30.731 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:40:00.732 +02:00 [INF] Removing 0 grants
+2019-09-09 15:40:00.733 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:40:30.751 +02:00 [INF] Removing 0 grants
+2019-09-09 15:40:30.756 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:41:00.748 +02:00 [INF] Removing 0 grants
+2019-09-09 15:41:00.749 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:41:30.759 +02:00 [INF] Removing 0 grants
+2019-09-09 15:41:30.761 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:42:00.781 +02:00 [INF] Removing 0 grants
+2019-09-09 15:42:00.786 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:42:30.781 +02:00 [INF] Removing 0 grants
+2019-09-09 15:42:30.783 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:43:00.799 +02:00 [INF] Removing 0 grants
+2019-09-09 15:43:00.806 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:43:30.814 +02:00 [INF] Removing 0 grants
+2019-09-09 15:43:30.819 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:44:00.829 +02:00 [INF] Removing 0 grants
+2019-09-09 15:44:00.834 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:44:30.847 +02:00 [INF] Removing 0 grants
+2019-09-09 15:44:30.848 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:45:00.860 +02:00 [INF] Removing 0 grants
+2019-09-09 15:45:00.864 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:45:30.871 +02:00 [INF] Removing 0 grants
+2019-09-09 15:45:30.872 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:46:00.892 +02:00 [INF] Removing 0 grants
+2019-09-09 15:46:00.896 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:46:30.888 +02:00 [INF] Removing 0 grants
+2019-09-09 15:46:30.889 +02:00 [INF] Removing 0 device flow codes
+2019-09-09 15:46:52.298 +02:00 [DBG] TaskCanceledException. Exiting.
+2019-09-09 15:46:52.332 +02:00 [DBG] Stopping grant removal
